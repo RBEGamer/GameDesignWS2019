@@ -1,5 +1,7 @@
 # HOMEWORK 1
 
+![alt text](/src/homework_1_marble_game/documentation/hw1_img_5.png "HW_1_MARBLE")
+
 
 ## REQUIREMENTS
 * Kugelspiel
