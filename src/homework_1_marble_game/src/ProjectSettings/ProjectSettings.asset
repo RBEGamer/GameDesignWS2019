@@ -634,10 +634,10 @@ PlayerSettings:
   facebookXfbml: 0
   facebookFrictionlessRequests: 1
   apiCompatibilityLevel: 6
-  cloudProjectId: 
+  cloudProjectId: b747d645-672c-47b5-af50-01ef6708b946
   framebufferDepthMemorylessMode: 0
-  projectName: 
-  organizationId: 
+  projectName: HA1_GAME_DESIGN_OM
+  organizationId: marcel-ochsendorf
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
   disableOldInputManagerSupport: 0
