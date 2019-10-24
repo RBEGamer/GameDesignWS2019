@@ -14,6 +14,8 @@ Suche dir ein Computerspiel aus, das dir gefällt, und beschreibe, was für ein 
 Ich habe die Neuauflage von Prey als Spiel gewählt. Ich denke das dieser Titel sehr schnell wieder von der Bildfläche verschwand.
 Motiviert hat mich, dass das Spiel einem. Nichts verzeiht und das Sammeln und Verwalten von Ressourcen. Vor allem am Anfang, ab der Mitte des Spiels steht der Shooter-Aspekt und die Entscheidungen in der Story, welcher der Spieler machen kann im Vordergrund.
 
+Es wird dem Spieler in jedem noch so kleinen Teil die Möglichkeit gegeben, die Mission auf unterschiedlichtsten Wegen zu beenden. Diese habe ich in kaum einen anderen Spiel gesehen.
+
 
 
 ## Spielelemente
@@ -22,7 +24,7 @@ Beschreibe, wie in diesem Spiel die Grundelemente (Technologie, Mechaniken, Stor
 Die Hauptmechanik ist eine klassische Shooter-Mechanik, welche mit einem üppigen Skill-Tree für zwei Klassen kombiniert wurde. Ein weiterer wichtiger Bestandteil ist das Ressourcen-Management, welches nicht einfach das Aufsammeln von Gegenständen ist. Das System ähnelt einem Crafting-System, zuerst müssen Gegenstände in Grundmaterialien zerlegt werden und mit gefundenen Bauplänen in gewünschte Gegenstände wie Munition zerlegt werden. Auch kann dies nicht einfach über das Inventar gemacht werden, sondern über in der Talos I verteilten Recyclern und Fabriktoren.
 Das Zusammenspiel aus Menschlichen und Alien-Gegnern und dem chronischen Mangel an Munition gelingt sehr gut. Obwohl die Talos I sehr groß ist, sind die einzelnen Missionen durch kurze Fußwege erreichbar.
 Alles in allem hatte ich bereits nach dem großartigen Intro und dem ersten darauf folgenden Plot-Twist sehr viel Spielspaß.
-
+Am Ende muss man sagen, das Prey 2017 kein Shooter ist, sondern ein Adventure mit den ein oder anderen Waffen.
 
 
 ## Thema
@@ -30,15 +32,16 @@ Beschreibe das Thema des Spiels. Was haben die Entwickler unternommen, um das Th
 
 In Prey 2017 spielt man Morgan Yu auf der Raumstation Talos I. Die Spielwelt beschränkt sich auf die Talos I und einen kleinen Bereich im Weltall. Das Thema des Spiels wird sehr gut an den Spieler weiteregegeben. Vor allem durch die Abwechslung auch bei den Gegnern, da es nicht nur die Aliens gibt sondern auch menschliche Gegner. Zu Anfang wird der Eindruck einer leeren, nur mit Alien besetzten Raumstation vermittelt. Dies ändert sich nach dem ersten Drittel, in dem auch zwar nur für kurze Zeit, menschliche Mitstreiter bekommt. Dadurch wird das Gefühl in einer Raumstation zu sein noch stärker.
 
-
+Die Bewohner der Raumstation fühlen sich nicht wie Clone von einander an sondern durch die Transcripts und Quartiere wie echte Bewohner der Raumstation.
 
 ## Problembeschreibung
 Was hätte an dem Spiel besser gemacht werden können? Welche Grundelemente sind betroffen? Welches Problem hätte hier deiner Meinung nach gelöst werden können?
 
 Technisch gesehen ist Prey 2017 auf dem PC sehr gut gelungen, auf den Konsolen hingegen wird es bei 1080p nur bei 30 Bildern wiedergegeben.
 Dies fällt vor allem bei den schnelle Kämpfen gegen die Mimics auf.
-Ansonsten kann ich auch meiner Sicht aus nichts negatives zu Prey 2017 sagen.
-Ich hatte ein sehr rundes Erlebnis, auch gab es für mich keine Brüche in der Story.
+Ein weiteres kleines Manko, sind die langen und often Lade-Screens. Diese kommen gefühlt alle 100m vor die man mit seinem Chrakter zurückgelegt hat und dauern trotz SSD doch gerne mal 40 Sekunden.
+
+Alles im allen, hatte ich ein sehr rundes Erlebnis, auch gab es für mich keine Brüche in der Story.
 
 
 ## [BONUS] Kreativität

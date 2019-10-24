@@ -149,6 +149,13 @@ public class player_ball : MonoBehaviour
             collected_bonus++;
             other.gameObject.GetComponent<bonus>().collected();
         }
+
+        //SPIKE COLLECTED
+        if (other.tag == tag_storage.get_tag_name(tag_storage.TAGS.SPIKE))
+        {
+            collected_bonus = 0;
+            spawn();
+        }
     }
 
 }

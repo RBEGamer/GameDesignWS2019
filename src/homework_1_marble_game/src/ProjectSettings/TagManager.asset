@@ -12,6 +12,7 @@ TagManager:
   - INIT
   - bonus
   - LSL
+  - SPIKE
   layers:
   - Default
   - TransparentFX

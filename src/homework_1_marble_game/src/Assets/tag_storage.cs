@@ -11,7 +11,8 @@ public class tag_storage : MonoBehaviour
         SPAWN_POS,
         GOAL_COLLIDER,
         OUT_OF_MAP_COLLIDER,
-        bonus
+        bonus,
+        SPIKE
     }
 
     public static  string get_tag_name(TAGS _t) {
