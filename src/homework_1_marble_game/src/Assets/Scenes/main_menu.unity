@@ -1058,6 +1058,11 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 4970619938338001283, guid: dcdf1796c6ea546fa8d910586754b439,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 6004838960050758873, guid: dcdf1796c6ea546fa8d910586754b439,
         type: 3}
       propertyPath: m_StaticEditorFlags
@@ -1067,11 +1072,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_TagString
       value: GOAL_COLLIDER
-      objectReference: {fileID: 0}
-    - target: {fileID: 4970619938338001283, guid: dcdf1796c6ea546fa8d910586754b439,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dcdf1796c6ea546fa8d910586754b439, type: 3}
@@ -2515,7 +2515,7 @@ MonoBehaviour:
   m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}

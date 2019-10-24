@@ -8,8 +8,7 @@ public class ui_ingame_manager : MonoBehaviour
 
     public GameObject ingame_menu_holder;
     public GameObject ingame_ui_holder;
-
-
+    
 
 
     private main_game_manager gm;
@@ -61,11 +60,19 @@ public class ui_ingame_manager : MonoBehaviour
         gm.toggle_pause();
     }
 
-
+    public void restart_button_click() {
+        gm.load_level(level_object_loader.obj_to_load); //LOAD CURRENT LOADED SCENE
+        gm.SetGameState(GameState.RUNNING);
+    }
    
 
     public void main_menu_button() {
         gm.load_scene(scene_storage.SCENES.MAIN_MENU);
     }
-    
+
+    public void resume_button_click()
+    {
+        gm.SetGameState(GameState.RUNNING);
+    }
+
 }
