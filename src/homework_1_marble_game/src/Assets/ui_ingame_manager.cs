@@ -8,11 +8,13 @@ public class ui_ingame_manager : MonoBehaviour
 
     public GameObject ingame_menu_holder;
     public GameObject ingame_ui_holder;
-    
 
+    public GameObject score_text_holder;
 
     private main_game_manager gm;
 
+
+    public player_stats psats;
     private void Awake()
     {
         gm = main_game_manager.Instance;
@@ -29,11 +31,11 @@ public class ui_ingame_manager : MonoBehaviour
     {
         
     }
-
+    
 
     public void update_ui() {
 
-
+       
 
         Debug.Log("update_ui");
         if (gm.gameState == GameState.PAUSE)
@@ -46,11 +48,11 @@ public class ui_ingame_manager : MonoBehaviour
             ingame_menu_holder.SetActive(false);
             ingame_ui_holder.SetActive(true);
         }
-       
 
 
 
 
+        score_text_holder.GetComponent<Text>().text = psats.score_level.ToString();
 
 
     }

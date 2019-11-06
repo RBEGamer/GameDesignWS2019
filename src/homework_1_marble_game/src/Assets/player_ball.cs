@@ -7,13 +7,13 @@ public class player_ball : MonoBehaviour
 
     public Transform spawn_pos;
     public Transform storing_point;
-
+    public player_stats psats;
 
     public bool spawned = false;
     public bool disable_movement = false;
     public int collected_bonus = 0;
     public int max_bonus = 0;
-
+    public int key_count = 0;
     private void GM_EVENTS() {
 
         Debug.Log("24232423");
@@ -147,6 +147,8 @@ public class player_ball : MonoBehaviour
         //BONUS COLLECTED
         if (other.tag == tag_storage.get_tag_name(tag_storage.TAGS.bonus)) {
             collected_bonus++;
+            psats.score_level++;
+            main_game_manager.Instance.trigger_main_update_event();
             other.gameObject.GetComponent<bonus>().collected();
         }
 
@@ -155,6 +157,13 @@ public class player_ball : MonoBehaviour
         {
             collected_bonus = 0;
             spawn();
+        }
+
+        //SPIKE COLLECTED
+        if (other.tag == tag_storage.get_tag_name(tag_storage.TAGS.KEY))
+        {
+            key_count++;
+            other.GetComponent<key>().collected();
         }
     }
 

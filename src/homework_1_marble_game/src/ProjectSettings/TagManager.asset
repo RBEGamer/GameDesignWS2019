@@ -13,6 +13,7 @@ TagManager:
   - bonus
   - LSL
   - SPIKE
+  - KEY
   layers:
   - Default
   - TransparentFX

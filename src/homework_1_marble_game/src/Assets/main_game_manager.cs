@@ -74,7 +74,10 @@ public class main_game_manager : MonoBehaviour
     }
 
 
-  
+    public void trigger_main_update_event() {
+        OnStateChange?.Invoke();
+
+    }
 
     public void load_level(scene_storage.LEVEL_OBJECT_SCENES _s)
     {

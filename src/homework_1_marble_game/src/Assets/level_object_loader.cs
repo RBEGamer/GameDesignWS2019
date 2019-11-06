@@ -9,7 +9,7 @@ public class level_object_loader : MonoBehaviour
    
     public static scene_storage.LEVEL_OBJECT_SCENES obj_to_load = scene_storage.LEVEL_OBJECT_SCENES.LEVEL_1;
 
-
+    public player_stats psats;
     private AudioSource asource;
     void Awake() {
         SceneManager.sceneLoaded += OnSceneLoaded;
@@ -19,6 +19,7 @@ public class level_object_loader : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        psats.score_level = 0;
         SceneManager.LoadSceneAsync(scene_storage.get_level_object_scene_name(level_object_loader.obj_to_load), LoadSceneMode.Additive);  
     }
 
