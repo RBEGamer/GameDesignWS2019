@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class level_selection_item : MonoBehaviour
 {
     public scene_storage.LEVEL_OBJECT_SCENES level_scene;
-
+    public main_menu_ui mmmenu;
     public GameObject star_1;
     public GameObject star_2;
     public GameObject star_3;
@@ -47,5 +47,10 @@ public class level_selection_item : MonoBehaviour
         }
 
 
+    }
+
+    public void level_load_button_clicked() {
+        Debug.Log(level_scene.ToString() + " load level button clicked");
+        mmmenu.load_level(level_scene);
     }
 }
