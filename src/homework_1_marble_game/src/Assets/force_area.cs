@@ -17,7 +17,6 @@ public class force_area : MonoBehaviour
 
     public Vector3 get_force(string _tag) {
         force_added = new Vector3(-this.gameObject.transform.forward.z, this.gameObject.transform.forward.y, this.gameObject.transform.forward.x) * strenght;
-
         return force_added;
         
     }

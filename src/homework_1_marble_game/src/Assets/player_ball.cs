@@ -34,11 +34,16 @@ public class player_ball : MonoBehaviour
         rigidbody.useGravity = true;
         spawned = true;
         disable_movement = false;
+        collected_bonus = 0;
+        key_count = 0;
+        ingame_ui.GetComponent<ui_ingame_manager>().update_ui();
+        this.rigidbody.velocity = Vector3.zero;
 
 
     }
 
     public void goto_parking() {
+        this.rigidbody.velocity = Vector3.zero;
         this.collider.enabled = false;
         rigidbody.useGravity = false;
         spawned = false;    
@@ -131,8 +136,8 @@ public class player_ball : MonoBehaviour
         //LEVEL FAILED
         if (other.tag == tag_storage.get_tag_name(tag_storage.TAGS.OUT_OF_MAP_COLLIDER)) {
             stats.set_score_for_scene(level_object_loader.obj_to_load,0); // 0%
-          //  goto_parking();
-          //  GameObject.Find("LEVEL_SCENE_LOADER").GetComponent<level_object_loader>().change_level(level_object_loader.obj_to_load);
+            goto_parking();
+            GameObject.Find("LEVEL_SCENE_LOADER").GetComponent<level_object_loader>().change_level(level_object_loader.obj_to_load);
         }
         //LEVEL WON
         if (other.tag == tag_storage.get_tag_name(tag_storage.TAGS.GOAL_COLLIDER))
@@ -191,7 +196,7 @@ public class player_ball : MonoBehaviour
         if (other.tag == tag_storage.get_tag_name(tag_storage.TAGS.FORCE_AREA))
         {
             this.rigidbody.AddForce(other.GetComponent<force_area>().get_force(this.gameObject.tag));
-            Debug.Log("--- ADDED FORCE ---");
+        //    Debug.Log("--- ADDED FORCE ---");
         }
     }
 
