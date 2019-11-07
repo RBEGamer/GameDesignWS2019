@@ -37,3 +37,5 @@ sysinfo.txt
 *.apk
 *.unitypackage
 *.meta
+src/homework_1_marble_game/src/.DS_Store
+src/homework_1_marble_game/src/Assets/.DS_Store

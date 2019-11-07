@@ -6,6 +6,7 @@ public class door : MonoBehaviour
 {
 
     public bool door_state = false;
+    public bool locked = false;
     public Transform up_point;
     public Transform down_point;
     public GameObject door_obj;
@@ -29,16 +30,17 @@ public class door : MonoBehaviour
         }
     }
 
-    public void OnCollisionEnter(Collision collision)
-    {
-        Debug.Log("-------- 213123----");
 
-        Debug.Log(collision.gameObject.name);
-        if (this.gameObject.GetComponent<player_ball>() != null) {
-            if (this.gameObject.GetComponent<player_ball>().key_count > 0) {
-                this.gameObject.GetComponent<player_ball>().key_count--;
-                this.door_state = true;
-            }
+    public bool open() {
+        if (!door_state && !locked)
+        {
+            door_state = true;
+            locked = true;
+            return true;
+        }
+        else {
+            return false;
         }
     }
+   
 }

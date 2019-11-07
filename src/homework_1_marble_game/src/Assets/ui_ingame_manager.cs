@@ -13,7 +13,7 @@ public class ui_ingame_manager : MonoBehaviour
 
     private main_game_manager gm;
 
-
+    public GameObject ingame_key_image_holder;
     public player_stats psats;
     private void Awake()
     {
@@ -52,9 +52,17 @@ public class ui_ingame_manager : MonoBehaviour
 
 
 
+
         score_text_holder.GetComponent<Text>().text = psats.score_level.ToString();
 
-
+        if (psats.key_count > 0)
+        {
+            ingame_key_image_holder.SetActive(true);
+        }
+        else {
+            ingame_key_image_holder.SetActive(false);
+        }
+       
     }
 
     public void pause_button_click() {

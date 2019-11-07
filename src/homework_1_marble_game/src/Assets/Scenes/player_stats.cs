@@ -4,6 +4,8 @@ using UnityEngine;
 [CreateAssetMenu]
 public class player_stats : ScriptableObject
 {
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -17,5 +19,6 @@ public class player_stats : ScriptableObject
     }
 
     public  int score_level;
+    public int key_count;
 
 }

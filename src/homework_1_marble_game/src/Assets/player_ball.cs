@@ -9,17 +9,19 @@ public class player_ball : MonoBehaviour
     public Transform storing_point;
     public player_stats psats;
 
+    public GameObject ingame_ui;
     public bool spawned = false;
     public bool disable_movement = false;
     public int collected_bonus = 0;
     public int max_bonus = 0;
     public int key_count = 0;
+
     private void GM_EVENTS() {
 
         Debug.Log("24232423");
     }
 
-
+    
     public void spawn() {
         spawn_pos = GameObject.FindGameObjectWithTag(tag_storage.get_tag_name(tag_storage.TAGS.SPAWN_POS)).transform;
         if (spawn_pos == null)
@@ -150,21 +152,37 @@ public class player_ball : MonoBehaviour
             psats.score_level++;
             main_game_manager.Instance.trigger_main_update_event();
             other.gameObject.GetComponent<bonus>().collected();
+            ingame_ui.GetComponent<ui_ingame_manager>().update_ui();
         }
 
         //SPIKE COLLECTED
         if (other.tag == tag_storage.get_tag_name(tag_storage.TAGS.SPIKE))
         {
             collected_bonus = 0;
+            psats.score_level = 0;
             spawn();
         }
 
-        //SPIKE COLLECTED
+        //KEY COLLECTED
         if (other.tag == tag_storage.get_tag_name(tag_storage.TAGS.KEY))
         {
             key_count++;
+            psats.key_count = key_count;
             other.GetComponent<key>().collected();
+            ingame_ui.GetComponent<ui_ingame_manager>().update_ui();
         }
+
+        //DOOR TOUCHED
+        if (other.tag == tag_storage.get_tag_name(tag_storage.TAGS.DOOR))
+        {    
+            if (key_count > 0 && other.GetComponent<door>().open()) {
+                key_count--;
+                psats.key_count = key_count;
+                ingame_ui.GetComponent<ui_ingame_manager>().update_ui();
+            }
+            
+        }
+
     }
 
 }
