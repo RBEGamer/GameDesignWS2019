@@ -14,7 +14,8 @@ public class tag_storage : MonoBehaviour
         bonus,
         SPIKE,
         KEY,
-        DOOR
+        DOOR,
+        FORCE_AREA
     }
 
     public static  string get_tag_name(TAGS _t) {

@@ -185,4 +185,14 @@ public class player_ball : MonoBehaviour
 
     }
 
+
+    void OnTriggerStay(Collider other)
+    {
+        if (other.tag == tag_storage.get_tag_name(tag_storage.TAGS.FORCE_AREA))
+        {
+            this.rigidbody.AddForce(other.GetComponent<force_area>().get_force(this.gameObject.tag));
+            Debug.Log("--- ADDED FORCE ---");
+        }
+    }
+
 }

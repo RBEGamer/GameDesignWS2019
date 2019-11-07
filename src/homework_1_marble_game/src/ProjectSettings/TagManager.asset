@@ -16,6 +16,7 @@ TagManager:
   - KEY
   - DOOR
   - UI
+  - FORCE_AREA
   layers:
   - Default
   - TransparentFX
